@@ -1,0 +1,34 @@
+# Dependências do Composer
+/vendor
+
+# Arquivos de ambiente
+.env
+
+# Cache do sistema
+/cache
+/tmp
+
+# Arquivos de logs
+*.log
+
+# Arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos específicos de IDEs
+.idea
+.vscode
+*.sublime-workspace
+*.sublime-project
+
+# Arquivos PHPStorm
+/.idea/
+/phpstorm.meta.php
+
+# Arquivos de configuração do servidor local
+Homestead.yaml
+Homestead.json
+/.vagrant/
+
+# Diretórios de uploads
+uploads/

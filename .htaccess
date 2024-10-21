@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Ignorar arquivos e diretórios que existem fisicamente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Ignorar arquivos com extensões específicas (CSS, JS, imagens, etc.)
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|ico|svg|mp4)$ [NC]
+
+# Reescrever URLs amigáveis para o redirect.php
+RewriteRule ^([a-zA-Z0-9]{8})$ redirect.php?id=$1 [L]
